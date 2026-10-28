@@ -14,14 +14,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        MediaLayer {
-            bindings = <&mo 3>;
-            key-positions = <36 41>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         HMShiftR: HMShiftR {
@@ -118,14 +111,14 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &mo 3  &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &mo 3  &trans  &kp DELETE  &trans  &trans  &trans
             >;
         };
 
         Media_Layer {
             display-name = "Media";
             bindings = <
-&bt BT_CLR  &trans  &rgb_ug RGB_TOG  &trans  &kp C_MUTE  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &sys_reset  &trans  &trans  &rgb_ug RGB_HUI  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &trans  &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp K_NEXT  &trans  &bootloader  &trans  &trans  &rgb_ug RGB_HUD  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &trans  &rgb_ug RGB_TOG  &kp LG(LC(N))  &kp C_MUTE  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &sys_reset  &trans  &trans  &rgb_ug RGB_HUI  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &trans  &kp PRINTSCREEN  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp K_NEXT  &trans  &bootloader  &trans  &trans  &rgb_ug RGB_HUD  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
